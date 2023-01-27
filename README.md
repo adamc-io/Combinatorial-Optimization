@@ -1,5 +1,5 @@
 ## Combinatorial-Optimization
-====================================
+
 Solving combinatorial optimization problems using python, google OR-Tools, and visualizations
 
 [Inspiration found here](https://developers.google.com/optimization/introduction)
