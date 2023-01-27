@@ -2,5 +2,5 @@
 Solving combinatorial optimization problems using python, google OR-Tools, and visualizations
 
 ##  Getting started
-[Inspiration]([https://www.google.com](https://www.google.com](https://developers.google.com/optimization/introduction))
+[Inspiration](https://developers.google.com/optimization/introduction)
 
