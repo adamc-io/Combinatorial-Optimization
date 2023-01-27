@@ -24,3 +24,31 @@ directions_result = gmaps.directions("Oakton, VA",
 print(directions_result[0]['legs'][0]['distance']['text'])
 print(directions_result[0]['legs'][0]['duration']['text'])
 
+
+# Constraints for the optimization
+'''
+User inputs a list of pick up locations and drop off locations if no drop off location is specified, 
+then the drop off location is assumed to be the warehouse and requires user to determine if the route needs to 
+return to the ware house or if it can continue, 
+
+User inputs the preferred date and time of the pick up and drop off, if no values are provided it assumes best possible 
+time and date
+
+User inputs the minimum truck size required for the job, if no value is provided it assumes any truck is possible 
+and chooses the best route
+
+User inputs the capacity of the load size, if no capacity is given the value is assume to be zero
+
+User inputs the est. time of job for each location, if no value is given the value is assumed to be zero
+
+No job can start before 8 AM and must end before 10 PM
+
+'''
+
+# Example of the user input
+
+#  |PickUp Loc|DropOff Loc|Pref. Date|Pref. Time|Min.Truck Size|ReturntoWarehouse|Load Capacity|Time@PckUp|Time@DrpOff|
+#  |----------|-----------|----------|----------|--------------|-----------------|-------------|----------|-----------|
+#  |12 Main St|456 Main St|01/01/2020| 12:00 PM |  Box Truck   |        Yes      |      10     |    10    |    10     |
+#  |12 Main St|456 Main St|   N/A    |    N/A   |  White Truck |         No      |      0      |    10    |    0      |
+
