@@ -21,8 +21,6 @@ APIs:
  - Maps Static API
  - Address Validation API
 
-[Inspiration found here](https://developers.google.com/optimization/introduction)
-
 ## Requirements
 
  - Python 3.5 or later.
